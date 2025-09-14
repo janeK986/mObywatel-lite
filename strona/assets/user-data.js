@@ -31,7 +31,7 @@ export const userData = {
 
 // Możesz też dodać różne profile użytkowników
 export const userProfiles = {
-    jan: {
+    Admin: {
         name: 'Jan',
         surname: 'Pawlata',
         nationality: 'polskie',
@@ -52,7 +52,7 @@ export const userProfiles = {
         homeDate: '01.01.2010'
     },
     
-    anna: {
+    Maja: {
         name: 'Maja',
         surname: 'Kosiorek',
         nationality: 'polskie', 
@@ -71,10 +71,9 @@ export const userProfiles = {
         countryOfBirth: 'Polska',
         adress: 'ul. Testowa 456, 30-001 Kraków',
         homeDate: '15.05.2015'
-    }
-},
-
- filip: {
+    },
+    
+    Filip: {
         name: 'Filip',
         surname: 'Żaczek',
         nationality: 'polskie', 
@@ -99,4 +98,5 @@ export const userProfiles = {
 // Aktualnie wybrany profil (możesz zmienić)
 
 export const currentProfile = 'jan'; // lub 'anna'
+
 
