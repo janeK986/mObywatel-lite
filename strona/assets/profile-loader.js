@@ -127,23 +127,24 @@ function updateElement(id, value) {
 window.testProfile = function() {
   const testProfile = {
     name: 'Jan',
-    surname: 'Kowalski',
-    nationality: 'polskie',
-    birthday: '15.03.1985',
-    pesel: '85031512345',
-    series_and_number: 'ABC123456',
-    expiry_date: '15.03.2030',
-    given_date: '15.03.2020',
-    fathers_name: 'Andrzej',
-    mothers_name: 'Anna',
-    family_name: 'Kowalski',
-    sex: 'M',
-    fathers_family_name: 'Kowalski',
-    mothers_family_name: 'Nowak',
-    birth_place: 'Warszawa',
-    country_of_birth: 'Polska',
-    address: 'ul. Przykładowa 123, 00-001 Warszawa',
-    image_url: 'https://i.imgur.com/placeholder1.jpg'
+        surname: 'Pawlata',
+        nationality: 'polskie',
+        birthday: '09.08.2007',
+        pesel: '07280902957',
+        seriesAndNumber: 'ZZC 216937',
+        expiryDate: '15.03.2034',
+        givenDate: '15.03.2024',
+        fathersName: 'Artur',
+        mothersName: 'Renata',
+        familyName: 'Pawlata',
+        sex: 'M',
+        fathersFamilyName: 'Pawlata',
+        mothersFamilyName: 'Ledzion',
+        birthPlace: 'Łowicz',
+        countryOfBirth: 'Polska',
+        adress: 'ul. Ikara 2 , 99-400 Łowicz',
+        homeDate: '01.01.2010',
+        image_url: 'https://i.imgur.com/placeholder1.jpg'
   };
   
   localStorage.setItem('userProfile', JSON.stringify(testProfile));
