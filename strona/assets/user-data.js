@@ -97,6 +97,7 @@ export const userProfiles = {
 
 // Aktualnie wybrany profil (możesz zmienić)
 
-export const currentProfile = 'jan'; // lub 'anna'
+export const currentProfile = 'Admin'; // lub 'anna'
+
 
 
