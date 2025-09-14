@@ -1,5 +1,5 @@
 // assets/load-data.js
-import { userData, userProfiles, currentProfile } from './user-data.js';
+import { userData, userProfiles, currentProfile } from '/user-data.js';
 
 // Funkcja do załadowania danych
 function loadUserData() {
@@ -121,4 +121,5 @@ window.showProfiles = function() {
 };
 
 // Eksportuj funkcje do użycia w innych plikach
+
 export { loadUserData, updateElement, updateDateTime };
