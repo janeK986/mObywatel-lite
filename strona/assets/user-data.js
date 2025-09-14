@@ -1,7 +1,7 @@
 // assets/user-data.js
 export const userData = {
     // Podstawowe dane
-    name: 'Jan',
+    name: 'wojty',
     surname: 'Kowalski', 
     nationality: 'polskie',
     birthday: '15.03.1985',
@@ -99,3 +99,4 @@ export const userProfiles = {
 // Aktualnie wybrany profil (możesz zmienić)
 
 export const currentProfile = 'jan'; // lub 'anna'
+
