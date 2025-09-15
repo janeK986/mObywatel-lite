@@ -20,6 +20,12 @@ function saveData() {
   const name = document.getElementById('name').value.trim();
   const surname = document.getElementById('surname').value.trim();
   const image = document.getElementById('image').value.trim();
+  try {
+    await saveFormDataToSupabase();
+    console.log('✅ Dane zapisane do Supabase!');
+  } catch (error) {
+    console.error('❌ Błąd zapisu do Supabase:', error);
+  }
 
   const birthDay = document.querySelectorAll('.date_input')[0].value.padStart(2, '0');
   const birthMonth = document.querySelectorAll('.date_input')[1].value.padStart(2, '0');
@@ -97,7 +103,9 @@ function saveData() {
 
   // Zapisz do mObywatelDB
   saveToIndexedDB(generatedData);
+  saveToSupabase(generatedData);
 
   // Przekierowanie do card.html
   window.location.href = 'card.html';
 }
+
