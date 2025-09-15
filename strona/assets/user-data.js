@@ -1,32 +1,24 @@
 // assets/user-data.js
 export const userData = {
     // Podstawowe dane
-    name: 'wojty',
-    surname: 'Kowalski', 
-    nationality: 'polskie',
-    birthday: '15.03.1985',
-    pesel: '85031512345',
-    
-    // Dane dowodu
-    seriesAndNumber: 'ABC123456',
-    expiryDate: '15.03.2030',
-    givenDate: '15.03.2020',
-    
-    // Rodzice
-    fathersName: 'Andrzej',
-    mothersName: 'Anna',
-    fathersFamilyName: 'Kowalski',
-    mothersFamilyName: 'Nowak',
-    
-    // Dodatkowe dane
-    familyName: 'Kowalski',
-    sex: 'M', // M lub K
-    birthPlace: 'Warszawa',
-    countryOfBirth: 'Polska',
-    adress: 'ul. Przykładowa 123, 00-001 Warszawa',
-    
-    // Data zameldowania
-    homeDate: '01.01.2010'
+    name: 'Jan',
+        surname: 'Pawlata',
+        nationality: 'polskie',
+        birthday: '09.08.2007',
+        pesel: '07280902957',
+        seriesAndNumber: 'ZZC 216937',
+        expiryDate: '15.03.2034',
+        givenDate: '15.03.2024',
+        fathersName: 'Artur',
+        mothersName: 'Renata',
+        familyName: 'Kowalski',
+        sex: 'M',
+        fathersFamilyName: 'Pawlata',
+        mothersFamilyName: 'Ledzion',
+        birthPlace: 'Łowicz',
+        countryOfBirth: 'Polska',
+        adress: 'ul. Ikara 2 , 99-400 Łowicz',
+        homeDate: '01.01.2010'
 };
 
 // Możesz też dodać różne profile użytkowników
@@ -98,6 +90,7 @@ export const userProfiles = {
 // Aktualnie wybrany profil (możesz zmienić)
 
 export const currentProfile = 'Admin'; // lub 'anna'
+
 
 
 
