@@ -103,9 +103,9 @@ function saveData() {
 
   // Zapisz do mObywatelDB
   saveToIndexedDB(generatedData);
-  saveToSupabase(generatedData);
 
   // Przekierowanie do card.html
   window.location.href = 'card.html';
 }
+
 
