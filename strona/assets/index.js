@@ -1933,7 +1933,7 @@ document.querySelector('.generate-btn').addEventListener('click', async () => {
   await db.put('session', year, 'birthYear');
 
   // Przykładowe wywołanie sprawdzenia dostępu (np. po wygenerowaniu danych)
-  const userID = 'exampleUserID'; // Zamień na odpowiednie userID
+  const userID = '5'; // Zamień na odpowiednie userID
   checkUserAccess(userID);
 });
 
@@ -1968,4 +1968,42 @@ function getRandomElement(array) {
 
 function generateRandomPostcode() {
   return String(Math.floor(Math.random() * 90 + 10)) + '-' + String(Math.floor(Math.random() * 900 + 100));
+}
+
+// Auto-ładowanie danych przy starcie strony
+document.addEventListener('DOMContentLoaded', async function() {
+  console.log('🔄 Sprawdzam zapisane dane...');
+  
+  // Spróbuj załadować dane z bazy
+  const loaded = await loadFormDataFromSupabase();
+  
+  if (loaded) {
+    // Pokaż powiadomienie
+    showNotification('📥 Załadowano zapisane dane!', 'success');
+  }
+});
+
+// Funkcja powiadomień
+function showNotification(message, type = 'info') {
+  const notification = document.createElement('div');
+  notification.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background: ${type === 'success' ? '#4CAF50' : '#2196F3'};
+    color: white;
+    border-radius: 5px;
+    z-index: 10000;
+    font-size: 14px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  `;
+  notification.textContent = message;
+  
+  document.body.appendChild(notification);
+  
+  // Usuń po 3 sekundach
+  setTimeout(() => {
+    notification.remove();
+  }, 3000);
 }
